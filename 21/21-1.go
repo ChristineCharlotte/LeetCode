@@ -1,8 +1,12 @@
 // 迭代
-package main
+package leetcode
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
-   //dummyHead := new(ListNode)
    dummyHead := &ListNode{}
    cursor := dummyHead
    for list1 != nil && list2 != nil {
